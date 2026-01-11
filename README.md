@@ -1,6 +1,6 @@
-# lyd-jukebox
+# mugshot
 
-Music player app
+Video Call app
 
 ## Built with
 
