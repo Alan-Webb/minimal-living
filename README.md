@@ -1,12 +1,12 @@
-# mugshot
+# minimal-living
 
-Video Call app
+Rejuvenating holiday service website
 
 ## Built with
 
 - React
 - Tailwind CSS
-- ZEGOCLOUD
+- Framer Motion
 
 ## Author
 
