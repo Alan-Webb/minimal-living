@@ -1,6 +1,6 @@
 # minimal-living
 
-Rejuvenating holiday service website
+corporate retreat website
 
 ## Built with
 
