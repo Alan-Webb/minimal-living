@@ -1,8 +1,13 @@
-import Hero from "./components/Hero"
+import Banner from "./components/Banner";
+import Hero from "./components/Hero";
+
 const App = () => {
-	return <div>
-		<Hero/>
-	</div>;
+	return (
+		<div>
+			<Hero />
+			<Banner />
+		</div>
+	);
 };
 
 export default App;
