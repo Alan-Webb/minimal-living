@@ -6,8 +6,6 @@ corporate retreat website
 
 - React
 - Tailwind CSS
-- Framer Motion
-- Swiper-js
 
 ## Author
 
