@@ -5,6 +5,7 @@ import Activities from "./components/Activities";
 import BookingForm from "./components/BookingForm";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 			<Activities />
 			<BookingForm />
 			<Gallery />
+			<ContactForm />
 			<Footer />
 		</>
 	);
