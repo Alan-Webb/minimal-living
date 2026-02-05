@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Maiden Orange", sans-serif;
+	font-family: "Maiden Orange", sans-serif;
+}
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+
+  li {
+    @apply p-4 text-sm
+  }
+
+  button {
+    @apply px-4 py-2
+  }
 }
