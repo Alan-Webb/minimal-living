@@ -9,11 +9,15 @@
 		@apply scroll-smooth;
 	}
 
-  li {
-    @apply p-4 text-sm
-  }
+	li {
+		@apply p-4 text-sm;
+	}
 
-  button {
-    @apply px-4 py-2
-  }
+	button {
+		@apply px-4 py-2 border bg-linear-to-r from-green-400 to-green-600 text-white;
+	}
+
+	h2 {
+		@apply text-xl font-bold;
+	}
 }
