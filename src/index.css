@@ -14,7 +14,7 @@
 	}
 
 	button {
-		@apply px-4 py-2 border bg-linear-to-r from-green-400 to-green-600 text-white;
+		@apply px-4 py-2 border bg-linear-to-r from-green-400 to-green-600 text-white rounded-xl cursor-pointer hover:scale-105;
 	}
 
 	h2 {
