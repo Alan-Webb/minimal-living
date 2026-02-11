@@ -32,6 +32,12 @@ const Navbar = () => {
 				<FaInstagramSquare className="mx-4" />
 				<FaYoutube className="mx-4" />
 			</div>
+			{/* Hamburger Icon */}
+			<div>
+				<FaBars />
+			</div>
+			{/* Mobile Menu */}
+			<div></div>
 		</div>
 	);
 };
