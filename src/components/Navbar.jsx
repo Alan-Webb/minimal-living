@@ -11,7 +11,7 @@ import {BsFillChatSquareDotsFill} from "react-icons/bs";
 
 const Navbar = () => {
 	return (
-		<div className="w-full min-h-12.5 flex justify-between items-center absolute z-10 text-white">
+		<div className="w-full min-h-12.5 flex justify-between items-center absolute z-10 text-white bg-green-800">
 			<ul>
 				<li>
 					<a href="/">Home</a>

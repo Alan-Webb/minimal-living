@@ -4,7 +4,7 @@ import {LuTrees} from "react-icons/lu";
 
 const TopBar = () => {
 	return (
-		<div className="flex justify-between items-center px-4 py-2 bg-teal-500 text-lg tracking-wide">
+		<div className="flex justify-between items-center px-4 py-1 bg-teal-500 text-lg tracking-wide">
 			<div className="flex items-center">
 				<LuTrees size={30} />
 				<h1 className="uppercase text-2xl font-bold ms-2">Minimal Living</h1>
