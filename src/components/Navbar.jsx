@@ -7,10 +7,17 @@ import {
 	FaYoutube,
 } from "react-icons/fa";
 import {FaSquareXTwitter} from "react-icons/fa6";
-import {BsFillChatSquareDotsFill} from "react-icons/bs";
 
 const Navbar = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
+
+	useEffect(() => {
+		if (mobileMenu) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "auto";
+		}
+	}, [mobileMenu]);
 
 	const handleMobileMenu = () => {
 		setMobileMenu(!mobileMenu);
@@ -40,13 +47,17 @@ const Navbar = () => {
 			</div>
 			{/* Hamburger Icon */}
 			<div onClick={handleMobileMenu} className="sm:hidden z-10">
-				<FaBars size={20} className="mr-4 cursor-pointer" />
+				{mobileMenu ? (
+					<FaTimes size={20} className="mr-4 cursor-pointer" />
+				) : (
+					<FaBars size={20} className="mr-4 cursor-pointer" />
+				)}
 			</div>
 			{/* Mobile Menu */}
 			<div
 				className={
 					mobileMenu
-						? "overflow-y-hidden md:hidden ease-in duration-300 absolute text-white text-3xl left-0 top-0 w-full h-screen bg-teal-600/90 px-4 py-7 flex flex-col"
+						? "md:hidden ease-in duration-300 absolute text-white text-3xl left-0 top-0 w-full h-screen bg-teal-600/90 px-4 py-7 flex flex-col"
 						: "absolute top-0 h-screen left-full ease-in duration-500"
 				}>
 				<ul className="h-full w-full text-center pt-12 space-y-6 uppercase tracking-wider">
