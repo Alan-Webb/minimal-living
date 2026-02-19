@@ -24,26 +24,43 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="w-full min-h-12.5 flex justify-between items-center absolute z-10 text-white bg-green-800">
+		<div className="w-full min-h-12.5 flex justify-between items-center absolute z-10 text-xl text-white bg-green-800">
 			<ul className="hidden sm:flex px-4 space-x-6 uppercase tracking-wider">
 				<li>
-					<a href="/">Home</a>
+					<a href="/" className="hover:text-black">
+						Home
+					</a>
 				</li>
 				<li>
-					<a href="#gallery">Gallery</a>
+					<a href="#gallery" className="hover:text-black">
+						Gallery
+					</a>
 				</li>
 				<li>
-					<a href="#deals">Deals</a>
+					<a href="#deals" className="hover:text-black">
+						Deals
+					</a>
 				</li>
 				<li>
-					<a href="#contact">Contact</a>
+					<a href="#contact" className="hover:text-black">
+						Contact
+					</a>
 				</li>
 			</ul>
 			<div className="flex justify-between">
-				<FaFacebook className="mx-4" />
-				<FaSquareXTwitter className="mx-4" />
-				<FaInstagramSquare className="mx-4" />
-				<FaYoutube className="mx-4" />
+				<FaFacebook
+					size={20}
+					className="mx-4 cursor-pointer hover:text-black"
+				/>
+				<FaSquareXTwitter
+					size={20}
+					className="mx-4 cursor-pointer hover:text-black"
+				/>
+				<FaInstagramSquare
+					size={20}
+					className="mx-4 cursor-pointer hover:text-black"
+				/>
+				<FaYoutube size={20} className="mx-4 cursor-pointer hover:text-black" />
 			</div>
 			{/* Hamburger Icon */}
 			<div onClick={handleMobileMenu} className="sm:hidden z-10">
@@ -62,16 +79,24 @@ const Navbar = () => {
 				}>
 				<ul className="h-full w-full text-center pt-12 space-y-6 uppercase tracking-wider">
 					<li>
-						<a href="/">Home</a>
+						<a href="/" className="hover:text-black">
+							Home
+						</a>
 					</li>
 					<li>
-						<a href="#gallery">Gallery</a>
+						<a href="#gallery" className="hover:text-black">
+							Gallery
+						</a>
 					</li>
 					<li>
-						<a href="#deals">Deals</a>
+						<a href="#deals" className="hover:text-black">
+							Deals
+						</a>
 					</li>
 					<li>
-						<a href="#contact">Contact</a>
+						<a href="#contact" className="hover:text-black">
+							Contact
+						</a>
 					</li>
 				</ul>
 			</div>
