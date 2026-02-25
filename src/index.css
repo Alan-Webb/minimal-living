@@ -2,12 +2,15 @@
 
 :root {
 	font-family: "Maiden Orange", sans-serif;
-	overflow: hidden;
 }
 
 @layer base {
 	html {
 		@apply scroll-smooth;
+	}
+
+	body {
+		@apply bg-teal-500;
 	}
 
 	button {
