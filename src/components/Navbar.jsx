@@ -57,7 +57,9 @@ const Navbar = ({activeSection}) => {
 						<button
 							onClick={handleToggleMenu}
 							className={`p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500`}>
-							<span className="sr-only">Open main menu</span>
+							<span className="sr-only">
+								{isOpen ? "Close Menu" : "Open Menu"}
+							</span>
 							<svg
 								className="h-6 w-6"
 								fill="none"
